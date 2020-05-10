@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Repost API load plan A" enabled="true">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Repost API load plan A FastAPI" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
@@ -132,7 +132,6 @@
         </hashTree>
         <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="setUp setProperties" enabled="true">
           <stringProp name="BeanShellSampler.query">${__setProperty(USERNAME, ${USERNAME})}
-${__setProperty(PASSWORD, ${PASSWORD})}
 ${__setProperty(TOKEN, ${TOKEN})}</stringProp>
           <stringProp name="BeanShellSampler.filename"></stringProp>
           <stringProp name="BeanShellSampler.parameters"></stringProp>
